@@ -11,6 +11,14 @@
 		1738BD1A1FAD578600F178FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1738BD181FAD578600F178FC /* Main.storyboard */; };
 		1738BD1C1FAD578600F178FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1738BD1B1FAD578600F178FC /* Assets.xcassets */; };
 		1738BD1F1FAD578600F178FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1738BD1D1FAD578600F178FC /* LaunchScreen.storyboard */; };
+		1738BD281FAD598800F178FC /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1738BD271FAD598800F178FC /* field_observations.json */; };
+		1738BD2A1FAD5A3E00F178FC /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD291FAD5A3E00F178FC /* Classification.swift */; };
+		1738BD2C1FAD5B2600F178FC /* FieldObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD2B1FAD5B2600F178FC /* FieldObservation.swift */; };
+		1738BD2E1FAD5C6200F178FC /* FieldObservationJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD2D1FAD5C6200F178FC /* FieldObservationJSONParser.swift */; };
+		1738BD301FAD666500F178FC /* FieldObservationJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD2F1FAD666500F178FC /* FieldObservationJSONLoader.swift */; };
+		1738BD321FAD69C200F178FC /* FieldObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD311FAD69C200F178FC /* FieldObservationsViewController.swift */; };
+		1738BD341FAD6A1700F178FC /* FieldObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD331FAD6A1700F178FC /* FieldObservationDetailViewController.swift */; };
+		1738BD361FAD750800F178FC /* FieldObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1738BD351FAD750800F178FC /* FieldObservationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		1738BD1B1FAD578600F178FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1738BD1E1FAD578600F178FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1738BD201FAD578600F178FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1738BD271FAD598800F178FC /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		1738BD291FAD5A3E00F178FC /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		1738BD2B1FAD5B2600F178FC /* FieldObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservation.swift; sourceTree = "<group>"; };
+		1738BD2D1FAD5C6200F178FC /* FieldObservationJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationJSONParser.swift; sourceTree = "<group>"; };
+		1738BD2F1FAD666500F178FC /* FieldObservationJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationJSONLoader.swift; sourceTree = "<group>"; };
+		1738BD311FAD69C200F178FC /* FieldObservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationsViewController.swift; sourceTree = "<group>"; };
+		1738BD331FAD6A1700F178FC /* FieldObservationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationDetailViewController.swift; sourceTree = "<group>"; };
+		1738BD351FAD750800F178FC /* FieldObservationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldObservationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,29 @@
 		1738BD131FAD578600F178FC /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				1738BD261FAD590600F178FC /* Model */,
 				1738BD141FAD578600F178FC /* AppDelegate.swift */,
 				1738BD181FAD578600F178FC /* Main.storyboard */,
 				1738BD1B1FAD578600F178FC /* Assets.xcassets */,
 				1738BD1D1FAD578600F178FC /* LaunchScreen.storyboard */,
 				1738BD201FAD578600F178FC /* Info.plist */,
+				1738BD311FAD69C200F178FC /* FieldObservationsViewController.swift */,
+				1738BD331FAD6A1700F178FC /* FieldObservationDetailViewController.swift */,
+				1738BD351FAD750800F178FC /* FieldObservationTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		1738BD261FAD590600F178FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1738BD271FAD598800F178FC /* field_observations.json */,
+				1738BD291FAD5A3E00F178FC /* Classification.swift */,
+				1738BD2B1FAD5B2600F178FC /* FieldObservation.swift */,
+				1738BD2D1FAD5C6200F178FC /* FieldObservationJSONParser.swift */,
+				1738BD2F1FAD666500F178FC /* FieldObservationJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1738BD1F1FAD578600F178FC /* LaunchScreen.storyboard in Resources */,
+				1738BD281FAD598800F178FC /* field_observations.json in Resources */,
 				1738BD1C1FAD578600F178FC /* Assets.xcassets in Resources */,
 				1738BD1A1FAD578600F178FC /* Main.storyboard in Resources */,
 			);
@@ -133,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1738BD2E1FAD5C6200F178FC /* FieldObservationJSONParser.swift in Sources */,
+				1738BD361FAD750800F178FC /* FieldObservationTableViewCell.swift in Sources */,
 				1738BD151FAD578600F178FC /* AppDelegate.swift in Sources */,
+				1738BD321FAD69C200F178FC /* FieldObservationsViewController.swift in Sources */,
+				1738BD2C1FAD5B2600F178FC /* FieldObservation.swift in Sources */,
+				1738BD341FAD6A1700F178FC /* FieldObservationDetailViewController.swift in Sources */,
+				1738BD2A1FAD5A3E00F178FC /* Classification.swift in Sources */,
+				1738BD301FAD666500F178FC /* FieldObservationJSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
